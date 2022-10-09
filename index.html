@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+    <title>Single Column Cash Book</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h1 class="nav-text">Single Column Cash Book</h1>
+        </nav>
+    </header>
+
+    <section class="para">
+        <div class="balance">
+            <button class="new removedisplay" onclick="reload()">Create New Account</button>
+        </div>
+    </section>
+
+    <!-- Debit Form -->
+    <section class="para">
+        <div class="form-container">
+            <div class="debit-form">
+                <h1 class="text-lead">Debit</h1>
+                <form action="index.html" method="post">
+                    <div class="form-item">
+                        <input class="form-input" name="date" id="date" type="date">
+                    </div>
+                    <div class="form-item">
+                        <input class="form-input" name="particular" id="particular" type="text" placeholder="Particular">
+                    </div>
+                    <div class="form-item">
+                        <input class="form-input" name="folio" id="folio" type="text" placeholder="Folio">
+                    </div>
+                    <div class="form-item">
+                        <input class="form-input" name="amount" id="amount" type="number" placeholder="Amount in Naira">
+                    </div>
+                    <div class="form-button">
+                        <button name="submit" type="button" class="submit" onclick="addtodebit()">Enter</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Credit form -->
+            <div class="credit-form">
+                <h1 class="text-lead">Credit</h1>
+                <form action="index.html" method="post">
+                    <div class="form-item">
+                        <input class="form-input" name="date" id="cr-date" type="date">
+                    </div>
+                    <div class="form-item">
+                        <input class="form-input" name="particular" id="cr-particular" type="text" placeholder="Particular">
+                    </div>
+                    <div class="form-item">
+                        <input class="form-input" name="folio" id="cr-folio" type="text" placeholder="Folio">
+                    </div>
+                    <div class="form-item">
+                        <input class="form-input" name="amount" id="cr-amount" type="number" placeholder="Amount in Naira">
+                    </div>
+                    <div class="form-button">
+                        <button name="submit" type="button" class="submit" onclick="addtocredit()">Enter</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="para">
+        <div class="account-container">
+            <table class="account" id="account">
+                <tr class="account-head">
+                    <th class="table-item">Date</th>
+                    <th class="table-item">Particular</th>
+                    <th class="table-item">Folio</th>
+                    <th class="table-item">Amount</th>
+                    <th class="table-item">Date</th>
+                    <th class="table-item">Particular</th>
+                    <th class="table-item">Folio</th>
+                    <th class="table-item">Amount</th>
+                </tr>
+
+            </table>
+        </div>
+    </section>
+
+    <section class="para">
+        <div class="balance">
+            <button class="submit" onclick="balance()">Balance Account</button>
+        </div>
+    </section>
+    
+</body>
+</html>

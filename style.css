@@ -1,0 +1,126 @@
+body{
+    background: whitesmoke;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    margin-top: -20px;
+}
+
+header{
+    margin: 0px;
+    top: 0px;
+    height: 50px;
+    width: 100%;
+    background: darkslategray;
+}
+
+.navbar{
+    margin-top: auto;
+    top: 0px;
+    height: 50px;
+    width: 100%;
+    color: white;
+    background: darkslategray;
+    align-content: center;
+}
+
+.nav-text{
+    text-align: center;
+    padding-top: 8px;
+}
+
+.para{
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 1%;
+}
+
+.form-container{
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.debit-form{
+    width: 100%;
+}
+
+.credit-form{
+    width: 100%;
+}
+
+.text-lead{
+    text-align: center;
+}
+
+.form-item{
+    width: 90%;
+    margin: 6px;
+}
+
+.form-button{
+    width: 40%;
+    margin: 6px;
+}
+
+.form-input{
+    width: 100%;
+    height: 25px;
+    border-radius: 15px;
+    font-size: 15px;
+    padding: 4px;
+}
+
+.submit{
+    width: 100%;
+    height: 40px;
+    border-radius: 15px;
+    font-size: 15px;
+    padding: 4px;
+    background-color: green;
+    color: white;
+}
+
+.submit:hover{
+    background-color: darkgreen;
+}
+
+.account-container{
+    width: 100%;
+    background-color: lightgrey;
+}
+
+.account{
+    width: 100%;
+}
+
+.table-item{
+    border-width: .5px;
+    border-style: solid;
+    border-color: black;
+}
+
+td{
+    border-width: .5px;
+    border-style: solid;
+    border-color: black;
+    text-align: center;
+}
+
+.removedisplay{
+    display: none;
+}
+
+.new{
+    width: 100%;
+    height: 40px;
+    border-radius: 15px;
+    font-size: 15px;
+    padding: 4px;
+    background-color: green;
+    color: white;
+}
+
+.new:hover{
+    background-color: darkgreen;
+}
